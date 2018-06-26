@@ -12,12 +12,12 @@ namespace WaveGenerator
             VerticalShift = 1;
         }
 
-        public WaveConfig(WaveType waveType, double frequency, double amplitude)
+        public WaveConfig(WaveType wt, double frequency, double amplitude)
         {
             Frequency = frequency;
             Period = 1 / frequency;
             Amplitude = amplitude;
-            WaveType = waveType;
+            WaveType = wt;
             VerticalShift = 0;
         }
 

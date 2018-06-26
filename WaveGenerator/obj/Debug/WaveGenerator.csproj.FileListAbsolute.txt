@@ -1,0 +1,6 @@
+C:\Users\Archer Morgan\Documents\Github\WaveGenerator\WaveGenerator\bin\Debug\WaveGenerator.exe.config
+C:\Users\Archer Morgan\Documents\Github\WaveGenerator\WaveGenerator\bin\Debug\WaveGenerator.exe
+C:\Users\Archer Morgan\Documents\Github\WaveGenerator\WaveGenerator\bin\Debug\WaveGenerator.pdb
+C:\Users\Archer Morgan\Documents\Github\WaveGenerator\WaveGenerator\obj\Debug\WaveGenerator.csproj.CoreCompileInputs.cache
+C:\Users\Archer Morgan\Documents\Github\WaveGenerator\WaveGenerator\obj\Debug\WaveGenerator.exe
+C:\Users\Archer Morgan\Documents\Github\WaveGenerator\WaveGenerator\obj\Debug\WaveGenerator.pdb

@@ -36,7 +36,7 @@ namespace WaveGenerator
 
         private static double Flat(long x, WaveConfig wc)
         {
-            return wc.VerticalShift;
+            return wc.Offset;
         }
 
         private static double Sawtooth(long x, WaveConfig wc)

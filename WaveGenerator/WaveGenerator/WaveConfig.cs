@@ -2,6 +2,8 @@ namespace WaveGenerator
 {
     public class WaveConfig
     {
+        private double frequency;
+
         public WaveConfig()
         {
             // initialize to dummy values
@@ -9,26 +11,17 @@ namespace WaveGenerator
             Period = 1;
             Amplitude = 1;
             WaveType = WaveType.Flat;
-            VerticalShift = 1;
+            Offset = 1;
         }
 
-        public WaveConfig(WaveType waveType, double frequency, double amplitude)
-        {
-            Frequency = frequency;
-            Period = 1 / frequency;
-            Amplitude = amplitude;
-            WaveType = waveType;
-            VerticalShift = 0;
-        }
+        public double Frequency { get { return frequency; } set { frequency = value; Period = 1 / value; } }
 
-        public double Frequency { get; set; }
-
-        public double Period { get; set; }
+        public double Period { get; private set; }
 
         public double Amplitude { get; set; }
 
         public WaveType WaveType { get; set; }
 
-        public double VerticalShift { get; set; }
+        public double Offset { get; set; }
     }
 }

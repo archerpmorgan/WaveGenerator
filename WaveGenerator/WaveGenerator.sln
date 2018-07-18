@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27703.2018
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WaveGenerator", "WaveGenerator\WaveGenerator.csproj", "{2263F965-6FF1-4B2A-9AB2-F352E405567D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WaveGenerator", "WaveGenerator\WaveGenerator.csproj", "{2263F965-6FF1-4B2A-9AB2-F352E405567D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WaveGeneratorExample", "WaveGeneratorExample\WaveGeneratorExample.csproj", "{EF7105F7-5807-4F2E-82D4-F61942750F29}"
 EndProject

@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using WaveGenerator;
+using System.Diagnostics;
 
 namespace WaveGeneratorExample
 {
@@ -13,21 +14,23 @@ namespace WaveGeneratorExample
         static void Main(string[] args)
         {
 
-            var comps = new WaveConfig[3];
-            comps[0] = new WaveConfig(WaveType.Sine, 0.001, 70);
-            comps[1] = new WaveConfig(WaveType.Sine, 0.01, 30);
-            comps[2] = new WaveConfig(WaveType.Flat, 1, 1)
+            var comps = new WaveConfig[1];
+            comps[0] = new WaveConfig()
             {
-                VerticalShift = 130
+                Amplitude = 15,
+                Frequency = 0.001,
+                Offset = 0,
+                WaveType = WaveType.Sine
             };
 
             var g = new WaveGenerator.WaveGenerator(comps);
+            var sw = new Stopwatch();
+            sw.Start();
 
             while (true)
-            {
-                var text = new string('-', (int)g.Read());
-                Console.WriteLine(text);
-
+            { 
+                var text = new string('-',  60 + (int)g.Read());
+                Console.WriteLine(sw.Elapsed.ToString() + text);
                 Thread.Sleep(10);
             }
         }

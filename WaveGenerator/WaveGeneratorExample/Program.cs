@@ -17,10 +17,10 @@ namespace WaveGeneratorExample
             var comps = new WaveConfig[1];
             comps[0] = new WaveConfig()
             {
-                Amplitude = 15,
-                Frequency = 0.001,
-                Offset = 0,
-                WaveType = WaveType.Sine
+                Amplitude = 10,
+                FrequencyInKilohertz = 0.002,
+                WaveType = WaveType.Sine,
+                Offset = 60
             };
 
             var g = new WaveGenerator.WaveGenerator(comps);

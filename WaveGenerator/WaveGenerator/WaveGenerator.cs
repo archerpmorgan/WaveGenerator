@@ -24,13 +24,13 @@ namespace WaveGenerator
 
         private static double Sine(long x, WaveConfig wc)
         {
-            var b = 2 * Math.PI / (1 / wc.Frequency);
+            var b = 2 * Math.PI / (1 / wc.FrequencyInKilohertz);
             return wc.Amplitude * Math.Sin(b * x);
         }
 
         private static double Square(long x, WaveConfig wc)
         {
-            var b = 2 * Math.PI / (1 / wc.Frequency);
+            var b = 2 * Math.PI / (1 / wc.FrequencyInKilohertz);
             return wc.Amplitude * Math.Sign(Math.Sin(b * x));
         }
 

@@ -7,14 +7,14 @@ namespace WaveGenerator
         public WaveConfig()
         {
             // initialize to dummy values
-            Frequency = 1;
+            FrequencyInKilohertz = 1;
             Period = 1;
             Amplitude = 1;
             WaveType = WaveType.Flat;
             Offset = 1;
         }
 
-        public double Frequency { get { return frequency; } set { frequency = value; Period = 1 / value; } }
+        public double FrequencyInKilohertz { get { return frequency; } set { frequency = value; Period = 1 / value; } }
 
         public double Period { get; private set; }
 
